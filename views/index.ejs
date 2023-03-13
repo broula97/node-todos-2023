@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello, <%= name %>!</h1>
+    <h1>These are your todos!</h1>
 
     <ul>
       <% for (const todo of todos) { %>
@@ -19,6 +19,7 @@
           <a href="/remove-todo/<%= todo.id %>">
             Odebrat
           </a>
+          <a href="/todo/<%= todo.id %>">Přejít na detail</a>
         </li>
       <% } %>
     </ul>

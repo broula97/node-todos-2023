@@ -25,7 +25,7 @@
         </li>
     </ul>
 
-    <form method="post" action="/todo/rename/:id">
+    <form method="post" action="/todo/rename/<%= id %>">
       <label>Nový název: </label>
       <input type="text" name="newTitle">
       <button type="submit">Přejmenovat TODO</button>
